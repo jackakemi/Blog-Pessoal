@@ -38,7 +38,7 @@ public class Postagem {
 	private Date date = new java.sql.Date(System.currentTimeMillis());
 
 	@ManyToOne
-	@JsonIgnoreProperties("postagem")
+	@JsonIgnoreProperties("postagem")		//para que não haja recursividade, repetição 
 	private Tema tema;
 	
 	
